@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <link href="E:\Web_design_course\HTML_Lab_1 style.css" rel="stylesheet"> -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <style>
+      html{
+        font-family: 'Livvic', sans-serif;
+        font-size: 110%;
+        /* width: 1100px; */
+        margin-top: 26px;
+        margin-left:  440px; 
+        margin-right: 500px;
+        margin-bottom: auto;
+      }
+      h1 {
+        font-family: 'Acme', sans-serif;
+        font-size: 350%;
+      }
+      header{
+        padding-bottom: 20px;
+      }
+      h2 {
+        font-family: 'Acme', sans-serif;
+        font-size: 220%;
+      }
+      p{
+        padding-bottom: 25px;
+      }
+      img{
+        padding-bottom: 25px;
+        padding-left: 15px;
+        padding-right: 25px;
+        
+      }
+      .p1{
+        padding-left: 40px;
+      }
+      .board_lenght{
+        margin: 1.75em 0;
+      }
+      .line_breaker{
+        /* padding-top: 15px; */
+        border: 3px solid #C1FF0A;
+        background-color: #d5d5d1;
+         padding: 10px;
+        
+      }
+      .head4{
+        padding-left: 5px;
+        font-family: 'Anton', sans-serif;
+        font-size: 160%;
+        color:#000000;
+      }
+      .copyright{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 16px;
+      }
+
+    </style>
+    <title>
+        Five Things You Should Know About HTML5
+    </title>
+</head>
+<body>
+    <header>
+    You are here:
+    <a href="">Home</a><span> &#8227; </span>
+    <a href="">Dive Into HTML5</a>
+    <span> &#8227; </span>
+     
+    </header>
+    <main>
+    <h1 align="center">
+      INTRODUCTION:
+     <br>Five Things You Should Know<br> About HTML5 
+ </h1>
+  <p align="center">
+       <a href=""> show table of contents</a>
+  </p>
+  <div align="center">
+      <h2>&#10087;</h2>
+  </div>
+  <h2 id="one">
+     1. It’s not one big thing
+  </h2>
+  <img src="video.png" align="right">
+  <p>
+      You may well ask: “How can I start using <abbr>HTML5</abbr> if older browsers don’t support it?” But the question itself is misleading.
+      <abbr>HTML5</abbr> is not one big thing; it is a collection of individual features. 
+       So you can’t detect “<abbr>HTML5</abbr> support,” because that doesn’t make any sense.
+       But you <em>can</em> detect support for individual features, like canvas, video, or geolocation.
+  </p>
+  <p>
+      You may think of <abbr>HTML</abbr> as tags and angle brackets.
+      That’s an important part of it, but it’s not the whole story. 
+      The<abbr>HTML5</abbr> specification also defines how those angle brackets interact with JavaScript, through the Document Object Model (<abbr>DOM</abbr>).
+      <abbr>HTML5 </abbr> doesn’t just define a &lt;video&gt; tag; there is also a corresponding <abbr>DOM</abbr> <abbr> API</abbr> for video objects in the <abbr>DOM</abbr>. 
+      You can use this <abbr>API</abbr> to detect support for different video formats, play a video, pause, mute audio, track how much of the video has been downloaded,
+      and everything else you need to build a rich user experience around the &lt;video&gt; tag itself.
+  </p>
+  <p>
+     <a href="">Chapter 2</a> and <a href="">Appendix A</a> will teach you how to properly detect support for each new The<abbr>HTML5</abbr> feature.
+  </p>
+  <h2 id="two">
+    2. You don’t need to throw anything away
+  </h2>
+  <img src="forms.png" align="left">
+  <p>
+      Love it or hate it, you can’t deny that<abbr> HTML4 </abbr> is the most successful markup format ever. <abbr> HTML5 </abbr> builds on that success. You don’t need to throw away your existing markup.
+       You don’t need to relearn things you already know.
+       If your web application worked yesterday in <abbr> HTML5 </abbr>, it will still work today in <abbr> HTML5 </abbr>. Period.
+  </p>
+  <p>
+      Now, if you want to <em>improve</em> your web applications, you’ve come to the right place. Here’s a concrete example: <abbr> HTML5 </abbr> supports all the form controls from <abbr> HTML5 </abbr>, but it also includes new input controls.
+      Some of these are long-overdue additions like sliders and date pickers; others are more subtle.
+      For example, the <code>email</code> input type looks just like a text box, but mobile browsers will customize their onscreen keyboard to make it easier to type <code>email</code> addresses.
+      Older browsers that don’t support the email input type will treat it as a regular text field, and the form still works with no markup changes or scripting hacks.
+      This means you can start improving your web forms <em>today</em>, even if some of your visitors are stuck on <abbr> IE </abbr> 6.
+  </p>
+  <p>
+      Read all the gory details about HTML5 forms in <a href="">Chapter 9</a>.
+  </p>
+  <h2 id="three">
+      3. It’s easy to get started
+  </h2>
+  <img src="markup-with-arrow.png" align="right">
+  <p>
+      “Upgrading” to <abbr> HTML5 </abbr> can be as simple as changing your <em>doctype</em>. The doctype should already be on the first line of every <abbr>HTML</abbr> page.
+       Previous versions of <abbr>HTML</abbr> defined a lot of doctypes, and choosing the right one could be tricky.
+       In <abbr> HTML5 </abbr>, there is only one doctype:<br><code><pre>      &lt;!DOCTYPE html&gt;</pre></code>
+  </p>
+  <p>
+      Upgrading to the <abbr> HTML5 </abbr> doctype won’t break your existing markup, because <a href="">obsolete elements</a> previously defined in <abbr> HTML4 </abbr> will still render in<abbr> HTML5 </abbr>.
+      But it will allow you to use — and validate — new semantic elements like &lt;article&gt;, &lt;section&gt;, &lt;header&gt;, and &lt;footer&gt;.
+      You’ll learn all about these new elements in <a href="">Chapter 3</a>.
+  </p>
+  <h2 id="four">
+      4. It already works
+  </h2>
+  <img src="rel-email.png" align="left">
+  <p>
+      Whether you want to draw on a canvas, play video, design better forms, or build web applications that work offline, you’ll find that <abbr> HTML5 </abbr> is already well-supported. 
+      Firefox, Safari, Chrome, Opera, and mobile browsers already support canvas (<a href="">Chapter 4</a>), video (<a href="">Chapter 5</a>), geolocation (<a href="">Chapter 6</a>), local storage (<a href="">Chapter 7</a>), and more.
+       Google already supports microdata annotations (<a href="">Chapter 10</a>).
+       Even Microsoft — rarely known for blazing the trail of standards support — supports most <abbr> HTML5 </abbr> features in Internet Explorer 9.
+  </p>
+  <img src="gears.png" align="right">
+  <p>
+      Each chapter of this book includes the all-too-familiar browser compatibility charts. But more importantly, each chapter includes a frank discussion of your options 
+      if you need to support older browsers. <abbr> HTML5 </abbr> features like geolocation (<a href="">Chapter 6</a>) and video (<a href="">Chapter 5</a>) were first provided by browser plugins like Gears or Flash.
+       Other features, like canvas (<a href="">Chapter 4</a>), can be emulated entirely in JavaScript.
+      This book will teach you how to target the native features of modern browsers, without leaving older browsers behind.
+  </p>
+  <h2>
+      5. It’s here to stay
+  </h2>
+  <p>
+      Tim Berners-Lee invented the world wide web in the early 1990s. He later founded the <abbr>W3C</abbr> to act as a steward of web standards, which the organization has done
+       for more than 15 years.
+      Here is what the <abbr>W3C</abbr> had to say about the future of web standards, in July 2009:
+  </p>
+  <div class="p1">
+      <p>
+          Today the Director announces that when the<abbr> XHTML 2 </abbr> Working Group charter expires as scheduled at the end of 2009, the charter will not be renewed. 
+          By doing so, and by increasing resources in the <abbr> HTML </abbr> Working Group, <abbr>W3C</abbr> hopes to accelerate the progress of <abbr> HTML5 </abbr> and clarify <abbr>W3C</abbr>’s position regarding the future of <abbr>HTML</abbr>
+      </p>
+  </div>
+  <p>
+      <abbr> HTML5 </abbr> is here to stay. <a href="">Let’s dive in</a>.
+  </p>
+  <div align="center">
+      <h2 id="five">
+        &#10087;
+      </h2>
+    </div>
+    
+  </div class="board_lenght">
+  
+  <blockquote></blockquote>
+  <h4 style="background: #00FF00;">
+    <div class="head4">
+      DID YOU KNOW?
+    </div>
+    
+      <p style="border: 1px solid #4682B4;; background-color: #FFFFFF; padding: 10px;">
+          
+          <img src="openclipart.org_johnny_automatic_bag_of_money.png" align="right">
+         
+           association with Google Press, O’Reilly is distributing this book in a variety of formats, including paper, ePub, Mobi, and DRM-free PDF.
+          The paid edition is called “HTML5: Up & Running,” and it is available now.
+          
+    
+          If you liked this introduction and want to show your appreciation,
+           you can buy “HTML5: Up & Running” with this affiliate link or buy an electronic edition directly from O’Reilly.
+          You’ll get a book, and I’ll get a buck. I do not currently accept direct donations.<br><br>
+          
+            <!-- <div class="line_breaker"> -->
+              If you liked this introduction and want to show your appreciation, you can buy “HTML5:
+               Up & Running” with this affiliate link or buy an electronic edition directly from O’Reilly. You’ll get a book, and I’ll get a buck. 
+               I do not currently accept direct donations.<br><br>
+              
+              <!-- </div> -->
+      </p>
+      </h4>
+    </blockquote>
+   </div>
+  </main>
+   <footer>
+   <div class="copyright">
+     <p align="center">
+      Copyright MMIX–MMXI <a href="">Mark Pilgrim</a>
+  </p>
+</div>
+</footer>
+</body>
+</html>
